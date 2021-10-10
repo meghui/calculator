@@ -49,7 +49,10 @@ function getNum(value) {
 }
 
 function add() {
-    isAdd = true;  
+    isAdd = true;
+    isSubtract = false;
+    isMultiply = false;
+    isDivide = false;
     if (hasTwoNums) {
         result += num;
     } else {
@@ -63,6 +66,9 @@ function add() {
 
 function subtract() {
     isSubtract = true;
+    isAdd = false;
+    isMultiply = false;
+    isDivide = false;
     if (hasTwoNums) {
         result -= num;
     } else {
