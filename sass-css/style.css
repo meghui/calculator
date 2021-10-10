@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* .calculator-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto;
+  width: 286px;
+  height: auto;
+}
+
+* .calculator-container .calculator {
+  width: 100%;
+}
+
+* .calculator-container .calculator .display-panel {
+  width: 35px;
+  padding: 15px 30px;
+  color: #d4d4d4;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 2px #7a7a7a;
+  box-shadow: inset 0 0 2px #7a7a7a;
+  background-color: #0d2130;
+  text-align: right;
+  font-size: 40px;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  color: white;
+  width: 286px;
+}
+
+* .calculator-container .calculator .display-panel:active {
+  opacity: 0.5;
+}
+
+* .calculator-container .calculator .blueBtn {
+  width: 35px;
+  padding: 15px 30px;
+  color: #d4d4d4;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 2px #7a7a7a;
+  box-shadow: inset 0 0 2px #7a7a7a;
+  background-color: #2987db;
+}
+
+* .calculator-container .calculator .blueBtn:active {
+  opacity: 0.5;
+}
+
+* .calculator-container .calculator .numberBtn {
+  width: 35px;
+  padding: 15px 30px;
+  color: #d4d4d4;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 2px #7a7a7a;
+  box-shadow: inset 0 0 2px #7a7a7a;
+  background-color: #636464;
+}
+
+* .calculator-container .calculator .numberBtn:active {
+  opacity: 0.5;
+}
+
+* .calculator-container .calculator .operatorBtn {
+  width: 35px;
+  padding: 15px 30px;
+  color: #d4d4d4;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 2px #7a7a7a;
+  box-shadow: inset 0 0 2px #7a7a7a;
+  background-color: #dbb322;
+}
+
+* .calculator-container .calculator .operatorBtn:active {
+  opacity: 0.5;
+}
+
+* .calculator-container .calculator .redBtn {
+  width: 35px;
+  padding: 15px 30px;
+  color: #d4d4d4;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 2px #7a7a7a;
+  box-shadow: inset 0 0 2px #7a7a7a;
+  background-color: #ef4e44;
+}
+
+* .calculator-container .calculator .redBtn:active {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */

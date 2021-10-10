@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sass/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <table class="calculator">
+            <tr>
+                <td colspan="4" class="display-panel" id="result-display">0</td>
+            </tr>
+            <tr>
+                <td class="redBtn" onclick="clearContent()">C</td>
+                <td class="blueBtn" colspan="2"></td>
+                <td class="operatorBtn" id="divideBtn" onclick="divide()">÷</td>
+            </tr>
+            <tr>
+                <td class="numberBtn" onclick="getNum(7)">7</td>
+                <td class="numberBtn" onclick="getNum(8)">8</td>
+                <td class="numberBtn" onclick="getNum(9)">9</td>
+                <td class="operatorBtn" id="multiplyBtn" onclick="multiply()">&times;</td>
+            </tr>
+            <tr>
+                <td class="numberBtn" onclick="getNum(4)">4</td>
+                <td class="numberBtn" onclick="getNum(5)">5</td>
+                <td class="numberBtn" onclick="getNum(6)">6</td>
+                <td class="operatorBtn" id="subtractBtn" onclick="subtract()">-</td>
+            </tr>
+            <tr>
+                <td class="numberBtn" onclick="getNum(1)">1</td>
+                <td class="numberBtn" onclick="getNum(2)">2</td>
+                <td class="numberBtn" onclick="getNum(3)">3</td>
+                <td class="operatorBtn" id="addBtn" onclick="add()">+</td>
+            </tr>
+            <tr>
+                <td class="numberBtn" colspan="2" onclick="getNum(0)">0</td>
+                <td class="numberBtn" onclick="setDecimal()">.</td>
+                <td class="blueBtn" id="equalBtn" onclick="equal()">=</td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
