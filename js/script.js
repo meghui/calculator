@@ -49,62 +49,151 @@ function getNum(value) {
 }
 
 function add() {
+    if (hasTwoNums) {
+        if (isAdd && !hasRefreshed) {
+            result += num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isSubtract && !hasRefreshed) {
+            result -= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isDivide && !hasRefreshed) {
+            result /= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isMultiply && !hasRefreshed) {
+            result *= num;
+            display.innerHTML = result;
+            num = result;
+        } else {
+            display.innerHTML = "";
+            result = num;
+            display.innerHTML = result;
+            hasTwoNums = true;
+        }
+    } else {
+        display.innerHTML = "";
+        result = num;
+        hasTwoNums = true;
+        display.innerHTML = result;
+    }
+    hasRefreshed = true;
     isAdd = true;
     isSubtract = false;
     isMultiply = false;
     isDivide = false;
-    if (hasTwoNums) {
-        result += num;
-    } else {
-        display.innerHTML = "";
-        result = num;
-        hasTwoNums = true;
-    }
-    hasRefreshed = true;
-    display.innerHTML = result;
 }
 
 function subtract() {
+    if (hasTwoNums) {
+        if (isAdd && !hasRefreshed) {
+            result += num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isSubtract && !hasRefreshed) {
+            result -= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isDivide && !hasRefreshed) {
+            result /= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isMultiply && !hasRefreshed) {
+            result *= num;
+            display.innerHTML = result;
+            num = result;
+        } else {
+            display.innerHTML = "";
+            result = num;
+            display.innerHTML = result;
+            hasTwoNums = true;
+        }
+    } else {
+        display.innerHTML = "";
+        result = num;
+        display.innerHTML = result;
+        hasTwoNums = true;
+    }
+    hasRefreshed = true;
     isSubtract = true;
     isAdd = false;
     isMultiply = false;
     isDivide = false;
-    if (hasTwoNums) {
-        result -= num;
-    } else {
-        display.innerHTML = "";
-        result = num;
-        hasTwoNums = true;
-    }
-    hasRefreshed = true;
-    display.innerHTML = result;
 }
 
 function multiply() {
-    isMultiply = true;
     if (hasTwoNums) {
-        result *= num;
+        if (isAdd && !hasRefreshed) {
+            result += num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isSubtract && !hasRefreshed) {
+            result -= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isDivide && !hasRefreshed) {
+            result /= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isMultiply && !hasRefreshed) {
+            result *= num;
+            display.innerHTML = result;
+            num = result;
+        } else {
+            display.innerHTML = "";
+            result = num;
+            display.innerHTML = result;
+            hasTwoNums = true;
+        }
     } else {
         display.innerHTML = "";
         result = num;
+        display.innerHTML = result;
         hasTwoNums = true;
     }
     hasRefreshed = true;
-    display.innerHTML = result;
+    isMultiply = true;
+    isAdd = false;
+    isSubtract = false;
+    isDivide = false;
 }
 
 function divide() {
-    isDivide = true;
-    result /= num;
-    if(hasTwoNums) {
-        result /= num;
+    if (hasTwoNums) {
+        if (isAdd && !hasRefreshed) {
+            result += num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isSubtract && !hasRefreshed) {
+            result -= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isDivide && !hasRefreshed) {
+            result /= num;
+            display.innerHTML = result;
+            num = result;
+        } else if (isMultiply && !hasRefreshed) {
+            result *= num;
+            display.innerHTML = result;
+            num = result;
+        } else {
+            display.innerHTML = "";
+            result = num;
+            display.innerHTML = result;
+            hasTwoNums = true;
+        }
     } else {
         display.innerHTML = "";
         result = num;
+        display.innerHTML = result;
         hasTwoNums = true;
     }
     hasRefreshed = true;
-    display.innerHTML = result;
+    isDivide = true;
+    isAdd = false;
+    isSubtract = false;
+    isMultiply = false;
 }
 
 function equal() {
