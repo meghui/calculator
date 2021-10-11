@@ -1,9 +1,11 @@
 @mixin button-style
-  width: 35px
+  // max-width: 72px
+  // overflow: hidden
+  height: auto
   padding: 15px 30px
   color: #d4d4d4
   font-family: Helvetica, sans-serif
-  font-size: 15px
+  font-size: 1rem
   font-weight: normal
   text-align: center
   -webkit-box-shadow: inset 0 0 2px rgb(122, 122, 122)
@@ -15,23 +17,25 @@
   margin: 0
   padding: 0
   .calculator-container
+    overflow: hidden
+    max-width: 286px   
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     margin: auto
-    width: 286px
-    height: auto
     .calculator
-      width: 100%
+      // overflow: hidden
+      // max-width: 286px
       .display-panel
         @include button-style
+        overflow: hidden
+        max-width: 224px
         background-color: #0d2130
         text-align: right
-        font-size: 40px
+        font-size: 2rem
         transition: 0.5
         color: white
-        width: 286px
       .blueBtn
         @include button-style
         background-color: #2987db
@@ -41,6 +45,8 @@
       .operatorBtn
         @include button-style
         background-color: #dbb322
+        color: #e2e2e2
       .redBtn
         @include button-style
         background-color: #ef4e44
+        color: #e2e2e2

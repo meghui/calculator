@@ -4,37 +4,34 @@
 }
 
 * .calculator-container {
+  overflow: hidden;
+  max-width: 286px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin: auto;
-  width: 286px;
-  height: auto;
-}
-
-* .calculator-container .calculator {
-  width: 100%;
 }
 
 * .calculator-container .calculator .display-panel {
-  width: 35px;
+  height: auto;
   padding: 15px 30px;
   color: #d4d4d4;
   font-family: Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: normal;
   text-align: center;
   -webkit-box-shadow: inset 0 0 2px #7a7a7a;
   box-shadow: inset 0 0 2px #7a7a7a;
+  overflow: hidden;
+  max-width: 224px;
   background-color: #0d2130;
   text-align: right;
-  font-size: 40px;
+  font-size: 2rem;
   -webkit-transition: 0.5;
   transition: 0.5;
   color: white;
-  width: 286px;
 }
 
 * .calculator-container .calculator .display-panel:active {
@@ -42,11 +39,11 @@
 }
 
 * .calculator-container .calculator .blueBtn {
-  width: 35px;
+  height: auto;
   padding: 15px 30px;
   color: #d4d4d4;
   font-family: Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: normal;
   text-align: center;
   -webkit-box-shadow: inset 0 0 2px #7a7a7a;
@@ -59,11 +56,11 @@
 }
 
 * .calculator-container .calculator .numberBtn {
-  width: 35px;
+  height: auto;
   padding: 15px 30px;
   color: #d4d4d4;
   font-family: Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: normal;
   text-align: center;
   -webkit-box-shadow: inset 0 0 2px #7a7a7a;
@@ -76,16 +73,17 @@
 }
 
 * .calculator-container .calculator .operatorBtn {
-  width: 35px;
+  height: auto;
   padding: 15px 30px;
   color: #d4d4d4;
   font-family: Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: normal;
   text-align: center;
   -webkit-box-shadow: inset 0 0 2px #7a7a7a;
   box-shadow: inset 0 0 2px #7a7a7a;
   background-color: #dbb322;
+  color: #e2e2e2;
 }
 
 * .calculator-container .calculator .operatorBtn:active {
@@ -93,16 +91,17 @@
 }
 
 * .calculator-container .calculator .redBtn {
-  width: 35px;
+  height: auto;
   padding: 15px 30px;
   color: #d4d4d4;
   font-family: Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: normal;
   text-align: center;
   -webkit-box-shadow: inset 0 0 2px #7a7a7a;
   box-shadow: inset 0 0 2px #7a7a7a;
   background-color: #ef4e44;
+  color: #e2e2e2;
 }
 
 * .calculator-container .calculator .redBtn:active {
